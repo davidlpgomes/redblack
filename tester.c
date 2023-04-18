@@ -15,10 +15,10 @@ int main() {
     tree_node_t* p3 = tree_insert(tree, 5, NULL);
     print_tree(tree);
     
-    tree_node_t* p4 = tree_insert(tree, 8, NULL);
+    tree_insert(tree, 8, NULL);
     print_tree(tree);
 
-    tree_node_t* p5 = tree_insert(tree, 2, NULL);
+    tree_insert(tree, 2, NULL);
     print_tree(tree);
 
     tree_delete(tree, p3);

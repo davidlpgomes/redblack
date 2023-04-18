@@ -106,6 +106,8 @@ tree_node_t* tree_insert(tree_t* tree, int key, void* value) {
     tree_node_t* y = tree->nil;
 
     tree_node_t* z = malloc(sizeof(tree_node_t));
+    test_alloc(z, "node");
+
     z->k = key;
     z->v = value;
 
